@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  */
 @Schema(description = "Model containing Student information")
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:35:41.912220290Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
 
 
 public class Student   {
@@ -100,7 +100,7 @@ public class Student   {
    **/
   @Schema(example = "2000-01-01", description = "")
   
-    public String getDateOfBirth() {
+  @Pattern(regexp="^\\d{4}-\\d{2}-\\d{2}$")   public String getDateOfBirth() {
     return dateOfBirth;
   }
 

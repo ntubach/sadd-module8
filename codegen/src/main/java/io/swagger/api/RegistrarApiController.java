@@ -33,7 +33,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:35:41.912220290Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
 @RestController
 public class RegistrarApiController implements RegistrarApi {
 
@@ -72,7 +72,7 @@ public class RegistrarApiController implements RegistrarApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Registrar>(objectMapper.readValue("{\n  \"courseNumber\" : 0,\n  \"studentIdList\" : [ 6, 6 ]\n}", Registrar.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Registrar>(objectMapper.readValue("{\n  \"courseNumber\" : 0,\n  \"studentIdList\" : [ 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 ]\n}", Registrar.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Registrar>(HttpStatus.INTERNAL_SERVER_ERROR);

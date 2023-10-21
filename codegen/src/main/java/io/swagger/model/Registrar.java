@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  * Registrar
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:35:41.912220290Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
 
 
 public class Registrar   {
@@ -63,7 +63,7 @@ public class Registrar   {
    **/
   @Schema(description = "")
   
-    public List<Integer> getStudentIdList() {
+  @Size(max=15)   public List<Integer> getStudentIdList() {
     return studentIdList;
   }
 

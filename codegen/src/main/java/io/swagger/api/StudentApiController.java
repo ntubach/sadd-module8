@@ -32,7 +32,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:35:41.912220290Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
 @RestController
 public class StudentApiController implements StudentApi {
 
@@ -81,20 +81,6 @@ public class StudentApiController implements StudentApi {
         }
 
         return new ResponseEntity<Student>(HttpStatus.NOT_IMPLEMENTED);
-    }
-
-    public ResponseEntity<List<Student>> studentIdGet(@Parameter(in = ParameterIn.PATH, description = "The ID of the student", required=true, schema=@Schema()) @PathVariable("id") Integer id) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                return new ResponseEntity<List<Student>>(objectMapper.readValue("[ {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}, {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<List<Student>>(HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        }
-
-        return new ResponseEntity<List<Student>>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     public ResponseEntity<Student> studentPost(@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="firstName", required=false)  String firstName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="lastName", required=false)  String lastName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="dateOfBirth", required=false)  String dateOfBirth,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="email", required=false)  String email) {

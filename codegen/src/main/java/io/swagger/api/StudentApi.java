@@ -32,7 +32,7 @@ import javax.validation.constraints.*;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:35:41.912220290Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
 @Validated
 public interface StudentApi {
 
@@ -66,15 +66,6 @@ public interface StudentApi {
         produces = { "application/json" }, 
         method = RequestMethod.GET)
     ResponseEntity<Student> studentGet(@NotNull @Parameter(in = ParameterIn.QUERY, description = "Student ID" ,required=true,schema=@Schema()) @Valid @RequestParam(value = "id", required = true) Integer id);
-
-
-    @Operation(summary = "", description = "Obtain a specific student's information based on 'id'", tags={  })
-    @ApiResponses(value = { 
-        @ApiResponse(responseCode = "200", description = "Successfully retrieved student", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Student.class)))) })
-    @RequestMapping(value = "/student/{id}",
-        produces = { "application/json" }, 
-        method = RequestMethod.GET)
-    ResponseEntity<List<Student>> studentIdGet(@Parameter(in = ParameterIn.PATH, description = "The ID of the student", required=true, schema=@Schema()) @PathVariable("id") Integer id);
 
 
     @Operation(summary = "Add Student", description = "", tags={  })
