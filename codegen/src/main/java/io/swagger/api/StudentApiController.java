@@ -33,7 +33,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T15:57:12.243087519Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T17:03:02.473949625Z[GMT]")
 @RestController
 public class StudentApiController implements StudentApi {
 
@@ -55,7 +55,7 @@ public class StudentApiController implements StudentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<List<Student>>(objectMapper.readValue("[ {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}, {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<List<Student>>(objectMapper.readValue("[ {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01T00:00:00.000+00:00\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}, {\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01T00:00:00.000+00:00\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<List<Student>>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -74,7 +74,7 @@ public class StudentApiController implements StudentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01T00:00:00.000+00:00\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Student>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -88,7 +88,7 @@ public class StudentApiController implements StudentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01T00:00:00.000+00:00\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Student>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -102,7 +102,7 @@ public class StudentApiController implements StudentApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
+                return new ResponseEntity<Student>(objectMapper.readValue("{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"dateOfBirth\" : \"2000-01-01T00:00:00.000+00:00\",\n  \"id\" : 1,\n  \"email\" : \"johndoe@gmail.com\"\n}", Student.class), HttpStatus.NOT_IMPLEMENTED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<Student>(HttpStatus.INTERNAL_SERVER_ERROR);

@@ -13,7 +13,7 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T15:57:12.243087519Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T17:03:02.473949625Z[GMT]")
 @Configuration
 public class SwaggerDocumentationConfig {
 
@@ -36,7 +36,7 @@ public class SwaggerDocumentationConfig {
             .licenseUrl("http://unlicense.org")
             .termsOfServiceUrl("")
             .version("1.0.1")
-            .contact(new Contact("","", ""))
+            .contact(new Contact("","", "ntubach1@jh.edu"))
             .build();
     }
 
@@ -52,7 +52,7 @@ public class SwaggerDocumentationConfig {
                     .name("")
                     .url("http://unlicense.org"))
                 .contact(new io.swagger.v3.oas.models.info.Contact()
-                    .email("")));
+                    .email("ntubach1@jh.edu")));
     }
 
 }
