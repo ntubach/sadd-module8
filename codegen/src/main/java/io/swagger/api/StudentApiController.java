@@ -1,5 +1,6 @@
 package io.swagger.api;
 
+import org.threeten.bp.LocalDate;
 import io.swagger.model.Student;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
@@ -32,7 +33,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T15:57:12.243087519Z[GMT]")
 @RestController
 public class StudentApiController implements StudentApi {
 
@@ -97,7 +98,7 @@ public class StudentApiController implements StudentApi {
         return new ResponseEntity<Student>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<Student> studentPut(@NotNull @Parameter(in = ParameterIn.QUERY, description = "Student ID" ,required=true,schema=@Schema()) @Valid @RequestParam(value = "id", required = true) Integer id,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="firstName", required=false)  String firstName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="lastName", required=false)  String lastName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="dateOfBirth", required=false)  String dateOfBirth,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="email", required=false)  String email) {
+    public ResponseEntity<Student> studentPut(@NotNull @Parameter(in = ParameterIn.QUERY, description = "Student ID" ,required=true,schema=@Schema()) @Valid @RequestParam(value = "id", required = true) Integer id,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="firstName", required=false)  String firstName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="lastName", required=false)  String lastName,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="dateOfBirth", required=false)  LocalDate dateOfBirth,@Parameter(in = ParameterIn.DEFAULT, description = "",schema=@Schema()) @RequestParam(value="email", required=false)  String email) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {

@@ -4,6 +4,7 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.v3.oas.annotations.media.Schema;
+import org.threeten.bp.LocalDate;
 import org.springframework.validation.annotation.Validated;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
@@ -12,7 +13,7 @@ import javax.validation.constraints.*;
  * StudentBody
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T15:57:12.243087519Z[GMT]")
 
 
 public class StudentBody   {
@@ -23,7 +24,7 @@ public class StudentBody   {
   private String lastName = null;
 
   @JsonProperty("dateOfBirth")
-  private String dateOfBirth = null;
+  private LocalDate dateOfBirth = null;
 
   @JsonProperty("email")
   private String email = null;
@@ -66,7 +67,7 @@ public class StudentBody   {
     this.lastName = lastName;
   }
 
-  public StudentBody dateOfBirth(String dateOfBirth) {
+  public StudentBody dateOfBirth(LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -77,11 +78,12 @@ public class StudentBody   {
    **/
   @Schema(description = "")
   
-  @Pattern(regexp="^\\d{4}-\\d{2}-\\d{2}$")   public String getDateOfBirth() {
+    @Valid
+    public LocalDate getDateOfBirth() {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(String dateOfBirth) {
+  public void setDateOfBirth(LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 

@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  * Registrar
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-21T05:45:26.553786594Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T15:57:12.243087519Z[GMT]")
 
 
 public class Registrar   {
