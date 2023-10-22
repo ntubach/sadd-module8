@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  */
 @Schema(description = "Model containing Student information")
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T17:03:02.473949625Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-10-22T22:27:14.133179335Z[GMT]")
 
 
 public class Student   {
